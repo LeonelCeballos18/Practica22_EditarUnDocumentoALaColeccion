@@ -17,16 +17,14 @@
             <th></th>
         </thead>
 
-        <% Object.keys(Users).forEach(function(prop) {  %>
-            <% for (let i=0; i<Users.length; i++) { %>
-                <tr>
-                    <td><%= Users[i].name %></td>
-                    <td><%= Users[i].email %></td>
-                    <td><%= Users[i].password %></td>
-                    <td><a href="<%= `findById/${Users[prop]._id}` %>">Editar</a></td>
-                    <td><a href="<%= `deleteUser/${Users[prop]._id}` %>">Borrar</a></td>
-                </tr>
-            <% } %>
+        <% Object.keys(Users).forEach((prop)=> {  %>
+            <tr>
+                <td><%= Users[prop].name %></td>
+                <td><%= Users[prop].email %></td>
+                <td><%= Users[prop].password %></td>
+                <td><a href="<%= `findById/${Users[prop]._id}` %>">Editar</a></td>
+                <td><a href="<%= `deleteUser/${Users._id}` %>">Borrar</a></td>
+            </tr>
         <% }) %>
     </table>
     <br>

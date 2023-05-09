@@ -34,3 +34,7 @@ form .btnAgregar{
 form .btnAgregar:hover{
     background-color: #0f362d;
 }
+
+form .inputId{
+    display: none;
+}
